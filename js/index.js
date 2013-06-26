@@ -253,7 +253,11 @@ $(function(){
 	   })
 	})
 	getNewAnonce();
+	getQList();
 });
 function getNewAnonce(){
 	$.get("res/getanonce.php", function(result){$('#newAnonceList').html(result);});
+}
+function getQList(){
+	$.get("res/getqlist.php", function(result){$('#qlist').html(result);});
 }

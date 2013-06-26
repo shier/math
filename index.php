@@ -60,7 +60,7 @@ $flashid=06231;
 	
 }
 
-.mainMenu{float:left;font:15px "Î¢ÈíÑÅºÚ";padding: 5px 6px;color:black; font-weight:bold; cursor:pointer; text-align:center; }
+.mainMenu{float:left;font:15px "Î¢ÈíÑÅºÚ";padding: 5px 6px;color:black;  cursor:pointer; text-align:center; }
 .mainMenuOver {color:#1096B3;}
 .subMain{position:relative; display:none;}
 .subMenu {float:left;font:12px "Î¢ÈíÑÅºÚ"; padding: 0px 6px;line-height:27px;color:white; cursor:pointer; background:#1096B3;}
@@ -200,31 +200,7 @@ function jumpPage(mid,sid){
                       <td><table width="488" border="0" cellspacing="0" cellpadding="0">
                           <tr>
                             <td width="47"><img src="images/qa_left.jpg" width="47" height="124" /></td>
-                            <td><table width="425" border="0" cellspacing="0" cellpadding="0">
-                                  <?php 
-								  
-								  
-								  $strsql="select  * from qlist as q, alist as a where a.qid=q.id order by qdate desc limit 0,2";
-								  $result=mysql_query($strsql, $conn);
-								  $detailNum =mysql_num_rows($result);
-						
-		
-								  for($id=1; $id<=$detailNum;$id++){
-								  	$row=mysql_fetch_array($result);
-								  	$q=formatData($row[question],25);
-									$a=formatData($row[answer],20);
-									$d="[" . $row[adate]. "]"; ?>
-									<tr><td height="57">
-                                  	<table width="425" border="0" cellspacing="0" cellpadding="0"><tr>
-                                    <td height="25" colspan="2" class="qa_title"><a href="index.php?menuID=10&submenuID=0" class="adown">
-									<?php echo $q; ?></a></td></tr><tr>
-                                    <td width="341" height="30" class="qa_content"><?php echo $a; ?></td>
-                                    <td width="84" class="qa_content"><?php echo $d; ?></td></tr></table></td></tr>
-                                   <?php if($id==1){ echo("<tr><td><img src=\"images/qa_sp.jpg\" width=425 height=10 /></td></tr>"); } 
-								  }
-								  ?>
-                                  
-                            </table></td>
+                            <td><div id="qlist"></div></td>
                             <td width="16"><img src="images/qa_right.jpg" width="16" height="124" /></td>
                           </tr>
                       </table></td>

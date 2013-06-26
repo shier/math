@@ -46,7 +46,20 @@ function formatData($string,$lens){
 	$temp=$temp. $endstr;
 	return $temp;
 }
+function formatDatau($string,$lens){
 
+	$string=str_replace("\\r","",$string);
+	$string=str_replace("\\n"," ",$string);
+	$endstr="";
+	$temp=strip_tags($string);
+	
+	if($lens>0 && mb_strlen($temp)>=$lens){
+		$endstr= "..."; 
+		$temp= mb_substr($temp, 0, $lens-1,"utf-8"); 
+	}
+	$temp=$temp. $endstr;
+	return $temp;
+}
 
 
 
