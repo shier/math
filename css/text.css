@@ -1,0 +1,56 @@
+body,td,th,input,textarea,select {	font-family: Î¢ÈíÑÅºÚ;}
+.annonce_number {	color: #74c020;	font-size: 30px;	font-family: Arial, Helvetica, sans-serif;	padding-left:2px;}
+
+.annonce_splice {vertical-align:top; padding-top:5px; text-align:center;color: #74c020;}
+.annonce_title {color: #666666;	font-weight: bold;font-size: 13px;}
+.annonce_content {color: #999999;font-size: 12px;}
+.qa_title {color: #666666;	font-weight: bold;font-size: 13px; padding-left:5px}
+.qa_content {color: #999999;font-size: 12px; padding-left:5px}
+.news_list {color: #999999;font-size: 12px; padding-left:5px}
+.contentback {color: #222222;font-size: 13.9px; line-height:25px; background-color:#FFFFFF; padding-left:5px; padding-right:5px}
+.content {color: #222222;font-size: 13.9px; line-height:25px}
+p {text-indent:20px; margin-top:2px; margin-bottom:2px; }
+
+.bigp {color: #222222;font-size: 18px; font-weight:bold}
+
+.pictitle {font-family: "»ªÎÄ¿¬Ìå";font-size: 14px}
+
+.tablecontent {color: #111111;font-size: 13.9px; padding-bottom:5px; padding-top:5px;text-align:center}
+.tabletitle {color: #111111;font-size: 13.9px; padding-bottom:5px; padding-top:5px; background-color:#FFFFFF; text-align:center; font-weight:bold}
+
+.infocontent {color: #111111;font-size: 13.9px; padding-bottom:5px; padding-top:5px; }
+.infocontentb{color: #111111;font-size: 13.9px; padding-bottom:5px; padding-top:5px;font-weight:bold; }
+
+.barTitle {color: #FFFFFF;font-size: 13.9px; padding-left:5px; font-weight:bold;}
+.special { vertical-align:top; text-align:right; padding-right:5px;}
+
+.brown {color: #FF3300;font-size: 13.9px; font-weight:bold;}
+
+.adown:link{text-decoration :none ;color : #555555 ;} 
+.adown:visited {text-decoration :none ;color : #555555 ;} 
+.adown:hover {text-decoration :underline ;color : #0C50D2;} 
+.adown:active {font-weight :bold ;text-decoration :none ;color : #555555 ;} 
+
+
+.cdown:link{text-decoration :none ;color : #FF9900 ;} 
+.cdown:visited {text-decoration :none ;color : #FF9900 ;} 
+.cdown:hover {text-decoration :underline ;color : #0C50D2;} 
+.cdown:active {font-weight :bold ;text-decoration :none ;color : #FF3300 ;} 
+
+.down {font-size: 16px}
+
+
+.overText { background-color:#6699FF; color:#FFFFFF; cursor:pointer;padding-bottom:5px; padding-top:5px; font-weight:300 }
+.outText { background-color:#ffffff; color:#111111;padding-bottom:5px; padding-top:5px; }
+
+.smalloverText { background-color:#6699FF; color:#FFFFFF; cursor:pointer;font-size: 12px; padding-left:5px}
+.smalloutText { background-color:#ffffff; color:#999999;font-size: 12px; padding-left:5px}
+
+.homeoverText { background-color:#6699FF; color:#FFFFFF; cursor:pointer}
+.homeoutText { background-color:#ffffff; color:#111111}
+
+
+ol,ul { margin-top:0px; margin-bottom:0px }
+li {margin:0px }
+
+.overPicture{}
