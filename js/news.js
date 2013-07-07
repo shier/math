@@ -11,7 +11,15 @@ function jumpTOP(url){
 			top.window.location=url;
 	}	
 }
-
+function jump(url){
+	
+	if(ie){
+			window.location.href(url);
+		}else{
+			window.location=url;
+	}	
+}
+var showmode
 $(function(){
 
 	$(".newsList").each(function(index){  
@@ -27,10 +35,32 @@ $(function(){
 			 click:function(){
 				 var nid=$(this).attr("id");
 				 nid=nid.substring(8,nid.length)
-				jumpTOP("index.php?menuID="+$('#showMode').val()+"=0&id="+nid+"&showmode=2")
+				 $.cookie("menuID",$('#showMode').val());
+				$.cookie("showmode",2);
+				$.cookie("newsID",nid);
+				jumpTOP("content.html")
 			 }
 			 
 	   })
+	   
 	});
-	
+	showmode=$.cookie("showmode")
+	if(showmode==undefined){showmode=1}
+	swfobject.embedSWF("midmenu.swf?id="+showmode, "midmenu", "488", "23", "8.0.0", "expressInstall.swf");
 });
+
+
+function shownews(nid){
+	$.cookie("showmode",nid)
+	jump("news.php")
+	
+}
+
+function showmore(){
+	menuID=13-showmode
+	submenuID=0
+	$.cookie("menuID",menuID)
+	$.cookie("submenuID",submenuID)
+	jumpTOP("content.html")
+	
+}

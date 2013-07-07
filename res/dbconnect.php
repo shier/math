@@ -1,15 +1,15 @@
-<?php
-
+﻿<?php
+error_reporting(0);
 $mysql_server_name="localhost"; 
-$mysql_username="shier"; 
-$mysql_password="a!s@d#f$"; 
-$mysql_database="haisw_math";
+$mysql_username="root"; 
+$mysql_password="Pass1234"; 
+$mysql_database="math";
 
 //$mysqli = new mysqli($mysql_server_name,$mysql_username,$mysql_password,$mysql_database);
 
 
 $conn=mysql_connect($mysql_server_name, $mysql_username, $mysql_password);
-mysql_select_db("haisw_math", $conn);
+mysql_select_db($mysql_database, $conn);
 mysql_query("SET NAMES 'gb2312'");
 
 
@@ -24,6 +24,7 @@ function convert2gbk($string){
 }
 
 function replacemark($string){
+	$string=str_replace("??","~",$string);
 	$string=str_replace("[","<",$string);
 	$string=str_replace("]",">",$string);
 	return $string;
@@ -33,7 +34,9 @@ function replacesmark($string){
 	return $string;
 }
 function formatData($string,$lens){
-
+	if($lens==0){
+		return $string;
+	}
 	$string=str_replace("\\r","",$string);
 	$string=str_replace("\\n"," ",$string);
 	$endstr="";

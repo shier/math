@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link type="text/css" rel="stylesheet" href="css/text.css" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script>
+$(function(){
+	var fcolor="#F3F3F3";
+	var bcolor="#DEE9F7";
+	$('.nameList td').addClass('tablecontent');
+	$(".nameList").each(function(index){  
+		this.style.backgroundColor = (index % 2 != 1 ?  fcolor:bcolor); 
+	   
+	});
+
+		$(window.parent.document).find("#content").load(function(){
+		var main = $(window.parent.document).find("#content");
+		var thisheight = $(document).height();
+		main.height(thisheight);
+		
+	});
+	$(window.parent.document).find("#content").load(function(){
+		var main = $(window.parent.document).find("#content");
+		var thisheight = $(document).height();
+		main.height(thisheight);
+	})
+	
+});
+</script>
+<title>无标题文档</title>
+</head>
+<body  style="margin:0px">
+<table width="712" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td >
+    <img src="images/depart_r1_c1.jpg" width="712" height="15" /></td>
+  </tr>
+
+    <tr>
+    <td class="content"><table width="712" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="13" background="images/depart_r2_c1.jpg">&nbsp;</td>
+        <td style="padding-top:10px; padding-bottom:10px" align=center><table width="680" border="0" cellpadding="0" cellspacing="1" bgcolor="#a2d7cd">
+          <tr class="nameList">
+            <td class="tabletitle">姓名 </td>
+            <td class="tabletitle">职务 </td>
+            <td class="tabletitle">职称 </td>
+            <td class="tabletitle">学历 </td>
+            <td class="tabletitle">分管工作 </td>
+            <td class="tabletitle">联系方式 </td>
+          </tr>
+          <tr class="nameList">
+            <td >王丽 </td>
+            <td >院长 </td>
+            <td >教授（博导） </td>
+            <td >博士 </td>
+            <td >行政（全面） </td>
+            <td ><a href="mailto:lwang.1@bjut.edu.cn">lwang.1@bjut.edu.cn </a></td>
+          </tr>
+           <tr class="nameList">
+            <td >张忠占 </td>
+            <td >书记 </td>
+            <td >教授（博导） </td>
+            <td >博士 </td>
+            <td >党务（全面） </td>
+            <td ><a href="mailto:zzhang@bjut.edu.cn">zzhang@bjut.edu.cn</a></td>
+          </tr>
+          <tr class="nameList">
+            <td >程曹宗 </td>
+            <td >副院长 </td>
+            <td >教授（博导） </td>
+            <td >博士 </td>
+            <td >研究生工作 </td>
+            <td ><a href="mailto:czcheng@bjut.edu.cn">czcheng@bjut.edu.cn</a></td>
+          </tr>
+           <tr class="nameList">
+            <td >王术 </td>
+            <td >副院长 </td>
+            <td >教授（博导） </td>
+            <td >博士 </td>
+            <td >科研工作 </td>
+            <td ><a href="mailto:wangshu@bjut.edu.cn">wangshu@bjut.edu.cn</a></td>
+          </tr>
+          <tr class="nameList">
+            <td >王海燕 </td>
+            <td >副书记 </td>
+            <td >政工师 </td>
+            <td >硕士 </td>
+            <td >学生工作 </td>
+            <td ><a href="mailto:wanghaiyan@bjut.edu.cn">wanghaiyan@bjut.edu.cn</a></td>
+          </tr>
+           <tr class="nameList">
+            <td >宋贵先 </td>
+            <td >院长助理 </td>
+            <td >工程师 </td>
+            <td >本科 </td>
+            <td >行政工作 </td>
+            <td ><a href="mailto:songguixian@bjut.edu.cn">songguixian@bjut.edu.cn</a></td>
+          </tr>
+           <tr class="nameList">
+            <td >江竹青 </td>
+            <td >院长助理 </td>
+            <td >教授 </td>
+            <td >博士 </td>
+            <td >本科教学 </td>
+            <td ><a href="mailto:zhqjiang@bjut.edu.cn">zhqjiang@bjut.edu.cn</a></td>
+          </tr>
+        </table></td>
+        <td width="13" background="images/depart_r2_c3.jpg">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+    <tr>
+    <td class="content"><img src="images/depart_r4_c1.jpg" width="712" height="38" /></td>
+  </tr>
+</table>
+</body>
+</html>
